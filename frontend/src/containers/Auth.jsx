@@ -44,11 +44,11 @@ const Auth = () => {
     return (
         <div className="container">
             <div className="row mt-5">
-                <h1 className="text-center mb-3">¡Bienvenido a nuestro Bingo virtual!</h1>
-                <h3 className="text-center mb-5">Inicia sesión para tener una experiencia inolvidable con el juego más divertido.</h3>
+                <h1 className="text-center mb-3">¡Bienvenido al Bingo virtual!</h1>
+                <h3 className="text-center mb-5">Inicia sesión para comenzar la partida.</h3>
             </div>
             <div className="row mt-5">
-                <form action="" onSubmit={handleFormSubmit}>
+                <form className="form-signin" action="" onSubmit={handleFormSubmit}>
                     {showErrorAlert && (
                         <div className="alert alert-danger" role="alert">
                             Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.

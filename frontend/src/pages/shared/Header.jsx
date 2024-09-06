@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/bingo-game">Bingo</a>
+                <a className="navbar-brand ms-4" href="/home">Bingo</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -21,7 +21,7 @@ const Header = () => {
                             <a className="nav-link active" aria-current="page" href="/home">Home</a>
                         </li> */}
                     </ul>
-                    <span className="navbar-text">
+                    <span className="navbar-text me-5">
                        ¡ Hola {authState.user}!
                     </span>
                 </div>
