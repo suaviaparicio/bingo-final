@@ -10,10 +10,10 @@ const Disqualified = () => {
     return (
         <div className="container">
             <div className="row pt-5 text-center">
-                <h1 className="">EL JUEGO HA FINALIZADO PARA TI</h1>
-                <h3 className="mt-5">Has sido descalificado de la partida</h3>
+                <h1 className="mt-5">Parece que no has ganado</h1>
+                <h3 className="mt-1">Quedas descalificado de la partida</h3>
                 <div className="col-6">
-                    <button type="button" className="btn btn-success btn-lg position-absolute top-50 start-50 translate-middle" onClick={handleClick}>
+                    <button type="button" className="btn btn-success position-absolute mt-5 start-50 translate-middle" onClick={handleClick}>
                         Regresar al Home
                     </button>
                 </div>

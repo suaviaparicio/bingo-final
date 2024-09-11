@@ -35,7 +35,6 @@ const RoomPlayers = () => {
         }, [endpointUrl]);
 
     return (
-        <div className="container">
             <div className="row">
                 <h2 className="">Jugadores en la sala</h2>
                 <ul className="list-group list-group-flush">
@@ -44,7 +43,6 @@ const RoomPlayers = () => {
                     ))}
                 </ul>
             </div>
-        </div>
     );
 };
 export default RoomPlayers;

@@ -44,8 +44,8 @@ const Home = () => {
     }
 
     return (
-        <div className="container mx-auto my-auto">
-            <div className="home pt-5 ">
+        <div className="container mx-auto my-auto min-vh-md-75 min-vh-100 d-flex flex-column align-items-center justify-content-center pb-5">
+            <div className="home pt-5">
                 <h1 className="pb-3 text-center">
                     ¡Bienvenido!
                 </h1>

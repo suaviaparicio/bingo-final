@@ -67,3 +67,4 @@ const BingoCard = () => {
 };
 
 export default BingoCard;
+
