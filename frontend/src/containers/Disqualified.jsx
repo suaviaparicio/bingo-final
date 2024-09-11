@@ -8,7 +8,7 @@ const Disqualified = () => {
         navigate('/home');
     }
     return (
-        <div className="container">
+        <div className="container my-auto min-vh-md-75 min-vh-100">
             <div className="row pt-5 text-center">
                 <h1 className="mt-5">Parece que no has ganado</h1>
                 <h3 className="mt-1">Quedas descalificado de la partida</h3>

@@ -5,7 +5,7 @@ const wsUrl = process.env.REACT_APP_WS_URL;
 
 const WaitingRoom = () => {
     return (
-        <div className="container pt-5">
+        <div className="container pt-5 my-auto min-vh-md-75 min-vh-100">
             <div className="row pt-5 pb-5">
                 <CounterDisplay websocketUrl={wsUrl}/>
             </div>
