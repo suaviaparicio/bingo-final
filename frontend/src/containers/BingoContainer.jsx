@@ -45,7 +45,7 @@ const BingoContainer = () => {
                     </div>
                     <div className="row justify-content-center">
                         <BingoCard />
-                        <button type="button" className="btn btn-warning btn-sm" onClick={handleCheckWin}>
+                        <button type="button" className="btn btn-warning fw-bold fs-4" onClick={handleCheckWin}>
                             ¡BINGO!
                         </button>
                     </div>
