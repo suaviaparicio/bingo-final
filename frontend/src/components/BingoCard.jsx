@@ -8,6 +8,8 @@ const BingoCard = () => {
     const [error, setError] = useState(null);
     const endpointUrl = process.env.REACT_APP_ENDPOINT_URL;
 
+    const bingoHeaderColors = ['bg-b-color', 'bg-i-color', 'bg-n-color', 'bg-g-color', 'bg-o-color'];
+
     useEffect(() => {
         fetch(`${endpointUrl}/api/generate-card`, {
             method: 'POST',
@@ -43,9 +45,8 @@ const BingoCard = () => {
     };
 
     const rows = Object.entries(bingoData).map(([letter, numbers], rowIndex) => (
-        // const rows = Object.entries(boardMock).map(([letter, numbers], rowIndex) => (
         <div key={rowIndex} className="bingo-row">
-            <div className="bingo-cell bingo-header-cell">{letter}</div>
+            <div className={`bingo-cell bingo-header-cell ${bingoHeaderColors[rowIndex]}`}>{letter}</div>
             {numbers.map((value, cellIndex) => {
                 const cellKey = `${rowIndex}-${cellIndex}`;
                 const isMarked = markedCells.includes(cellKey);
@@ -56,7 +57,11 @@ const BingoCard = () => {
                         className={`bingo-cell ${isMarked ? 'marked-cell' : ''}`}
                         onClick={() => handleCellClick(rowIndex, cellIndex)}
                     >
-                        {value}
+                        {value === 'Free' ? (
+                            <img src="/star.png" alt="Free Space" className="star-image" />
+                        ) : (
+                            value
+                        )}
                     </div>
                 );
             })}
