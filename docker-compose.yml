@@ -1,0 +1,41 @@
+version: '3.8' 
+
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: 'bingo'
+      MYSQL_USER: 'bingo'
+      MYSQL_PASSWORD: 'bingotesting'
+      MYSQL_ROOT_PASSWORD: 'rootbingotesting'
+    # volumes:
+    #   - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mysql
+    restart: always
+
+volumes:
+  mysql_data:

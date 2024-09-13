@@ -20,6 +20,7 @@ async function createUser(username, plainTextPassword, email) {
 }
 
 // createUser('exampleUser', 'userPassword', 'example@test.com');
+// createUser('exampleUser2', 'userPassword', 'example2@test.com');
 
     
 // User.drop()
