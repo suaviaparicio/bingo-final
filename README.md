@@ -1,5 +1,8 @@
 # Bingo Game
 
+![Screenshot 2024-09-12 at 3 06 46 PM](https://github.com/user-attachments/assets/8801a6e5-7da3-4d62-9d55-c1d959f442af)
+
+
 ## Table of Contents
 1. [Requirements](#requirements)
 2. [Installation](#installation)
