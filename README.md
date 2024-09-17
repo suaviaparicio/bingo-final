@@ -22,7 +22,7 @@
 ## Running the App
 1. Clone the repository:
    ```bash
-   git clone git@github.com:suaviaparicio/notes.git
+   git clone git@github.com:suaviaparicio/bingo-final.git
    cd bingo-final
    ```
 
@@ -43,12 +43,12 @@
 
 ## Tech Stack
 - **Backend:**
-  - Built using Node.js version 21.72
+  - Built using Node.js version 21.7
   - Express.js 4.19
   - MySQL 8.0
 
 - **Frontend:**
-  - Node.js version 21.72
+  - Node.js version 21.7
   - React.js 18.2
   - Bootstrap 6 
 
