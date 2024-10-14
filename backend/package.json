@@ -27,7 +27,7 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "jest-websocket-mock": "^2.5.0",
-    "supertest": "^6.3.3",
+    "supertest": "^7.0.0",
     "mysql2": ">=3.9.8"
   }
 }
